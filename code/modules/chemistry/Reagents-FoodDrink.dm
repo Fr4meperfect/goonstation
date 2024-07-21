@@ -1548,6 +1548,17 @@ datum
 			reagent_state = LIQUID
 			taste = "like an afternoon on the porch"
 
+		fooddrink/alcoholic/stormy
+			name = "Dark 'n Stormy"
+			id = "stormy"
+			fluid_r = 161
+			fluid_g = 106
+			fluid_b = 34
+			alch_strength = 0.2
+			description = "It was a- eh, you know the rest."
+			reagent_state = LIQUID
+			taste = "like a rainy night"
+
 		fooddrink/alcoholic/pinacolada
 			name = "Piña Colada"
 			id = "pinacolada"

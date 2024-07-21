@@ -1718,6 +1718,15 @@
 		mix_phrase = "The frightening amount of liquor in the container balances out with the lemon juice and sours."
 		mix_sound = 'sound/misc/drinkfizz.ogg'
 
+	cocktail_stormy
+		name = "Dark 'n Stormy"
+		id = "stormy"
+		result = "stormy"
+		required_reagents = list("rum" = 1, "ginger_ale" = 1)
+		result_amount = 2
+		mix_phrase = "The drink fizzes."
+		mix_sound = 'sound/effects/thunder.ogg'
+
 	cocktail_hunchback
 		name = "Hunchback"
 		id = "hunchback"

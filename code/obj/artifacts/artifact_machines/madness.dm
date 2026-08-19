@@ -64,7 +64,7 @@
 					target_list=list(/mob/living/carbon/human),
 					range=6,
 					image_prob=100,
-					image_time=60,
+					image_time=60 SECONDS,
 					override=FALSE
 				)
 			),
@@ -81,7 +81,7 @@
 						image(icon = 'icons/effects/vomit.dmi', icon_state = "spiders3"),
 					),
 					image_prob=10,
-					image_time=60,
+					image_time=60 SECONDS,
 				)
 			),
 			list(/datum/component/hallucination/fake_attack,
@@ -114,7 +114,7 @@
 					target_list=list(/mob/living/carbon/human),
 					range=8,
 					image_prob=100,
-					image_time=60,
+					image_time=60 SECONDS,
 					override=TRUE,
 					visible_creation = FALSE
 				)
@@ -193,7 +193,7 @@
 					target_list=list(/turf/simulated/wall),
 					range=6,
 					image_prob=30,
-					image_time=60,
+					image_time=60 SECONDS,
 					override=TRUE
 				)
 			),
@@ -209,7 +209,7 @@
 					target_list=list(/turf/simulated/floor),
 					range=8,
 					image_prob=80,
-					image_time=60,
+					image_time=60 SECONDS,
 					override=TRUE
 				)
 			),
@@ -257,7 +257,7 @@
 					target_list=list(/turf/simulated/wall),
 					range=6,
 					image_prob=10,
-					image_time=30,
+					image_time=30 SECONDS,
 					override=TRUE
 				)
 			),
@@ -269,7 +269,7 @@
 					target_list=list(/turf/simulated/floor),
 					range=8,
 					image_prob=80,
-					image_time=60,
+					image_time=60 SECONDS,
 					override=TRUE
 				)
 			),
@@ -287,7 +287,7 @@
 					target_list=list(/obj/machinery/vending, /obj/machinery/computer3, /obj/machinery/computer, /obj/machinery/portable_atmospherics/canister, /obj/reagent_dispensers, /obj/machinery/manufacturer),
 					range=6,
 					image_prob=20,
-					image_time=30,
+					image_time=30 SECONDS,
 					override=TRUE
 				)
 			),
@@ -304,7 +304,7 @@
 					target_list=list(/mob/living/carbon/human),
 					range=6,
 					image_prob=40,
-					image_time=30,
+					image_time=30 SECONDS,
 					override=TRUE,
 					visible_creation = FALSE
 				)

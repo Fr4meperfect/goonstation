@@ -31,7 +31,7 @@
 							else
 								L.AddComponent(/datum/component/hallucination/fake_attack, timeout=timeout_seconds, image_list=null, name_list=null, attacker_prob=20, max_attackers=3)
 							L.AddComponent(/datum/component/hallucination/random_sound, timeout=timeout_seconds, sound_list=drug_type.halluc_sounds, sound_prob=5)
-							L.AddComponent(/datum/component/hallucination/random_image_override, timeout=timeout_seconds, image_list=drug_type.critter_image_list, target_list=list(/mob/living/carbon/human), range=6, image_prob=10, image_time=20, override=TRUE)
+							L.AddComponent(/datum/component/hallucination/random_image_override, timeout=timeout_seconds, image_list=drug_type.critter_image_list, target_list=list(/mob/living/carbon/human), range=6, image_prob=10, image_time=20 SECONDS, override=TRUE)
 						if(2) //lsbee
 							var/datum/reagent/drug/lsd_bee/drug_type = /datum/reagent/drug/lsd_bee //it's a path so we can grab the static vars, and not do init
 							logTheThing(LOG_DIARY, null, "[L] gets [drug_type] like effect applied by ion storm")
@@ -53,7 +53,7 @@
 							L.emote("scream")
 						if(5) //mimicotoxin
 							logTheThing(LOG_DIARY, null, "[L] gets mimicotoxin like effect applied by ion storm")
-							L.AddComponent(/datum/component/hallucination/random_image_override, timeout=timeout_seconds, image_list=list(image('icons/misc/critter.dmi',"mimicface")), target_list=list(/obj/item, /mob/living), range=5, image_prob=2, image_time=10, override=FALSE)
+							L.AddComponent(/datum/component/hallucination/random_image_override, timeout=timeout_seconds, image_list=list(image('icons/misc/critter.dmi',"mimicface")), target_list=list(/obj/item, /mob/living), range=5, image_prob=2, image_time=10 SECONDS, override=FALSE)
 
 
 

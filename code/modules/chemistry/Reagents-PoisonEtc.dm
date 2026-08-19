@@ -2390,7 +2390,7 @@ datum
 				. = ..()
 				var/poison_amount = holder?.get_reagent_amount(src.id) // need to check holder as the reagent could be fully removed in the parent call
 				if(poison_amount > 5)
-					M.AddComponent(/datum/component/hallucination/random_image_override, timeout=10, image_list=list(image('icons/misc/critter.dmi',"mimicface")), target_list=list(/obj/item, /mob/living), range=5, image_prob=2, image_time=10, override=FALSE)
+					M.AddComponent(/datum/component/hallucination/random_image_override, timeout=10, image_list=list(image('icons/misc/critter.dmi',"mimicface")), target_list=list(/obj/item, /mob/living), range=5, image_prob=2, image_time=10 SECONDS, override=FALSE)
 				if(poison_amount > 15)
 					M.setStatusMin("blinded", 10 SECONDS * mult)
 				if(poison_amount > 30)

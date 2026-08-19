@@ -195,7 +195,7 @@ ABSTRACT_TYPE(/datum/component/hallucination)
 			halluc.appearance = copyfrom.appearance
 			halluc.loc = halluc_loc
 			parent_mob.client?.images += halluc
-			SPAWN(src.image_time SECONDS)
+			SPAWN(src.image_time)
 				qdel(halluc)
 		. = ..()
 
@@ -339,7 +339,7 @@ ABSTRACT_TYPE(/datum/component/hallucination)
 			var/atom/halluc_loc = pick(potentials)
 			var/image/copyfrom = pick(src.image_list)
 			var/datum/component/halluc_image/component = halluc_loc.AddComponent(/datum/component/halluc_image, parent_mob.client, copyfrom, src.override)
-			SPAWN(src.image_time SECONDS)
+			SPAWN(src.image_time)
 				component.RemoveComponent()
 		. = ..()
 
